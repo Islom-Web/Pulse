@@ -1,7 +1,18 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts';
+@import 'libs/slick';
+@import 'libs/icofont.min';
+@import 'libs/animate.min';
+
 @import 'base/variables';
+@import 'base/animations';
 * {
 	font-family: "Musep Sans Cyrl", sans-serif;
 }
+
+html {
+	scroll-behavior: smooth;
+  }
 
 .container {
 	max-width: 950px;
@@ -16,4 +27,9 @@
 @import 'blocks/titles';
 @import 'blocks/forms';
 @import 'blocks/carousel';
+@import 'blocks/catalog';
+@import 'blocks/reviews';
+@import 'blocks/footer';
+@import 'blocks/modal';
+@import 'blocks/pageup';
 @import 'media/media';

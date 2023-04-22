@@ -1,3 +1,11 @@
+@media (max-width:1200px) {
+	.carousel{
+		&__inner {
+			width: 80%;
+		}
+	}
+}
+
 @media (max-width:991px) {
 	.promo {
 		padding-left: 25px;
@@ -30,6 +38,10 @@
 		}
 	
 	}
+	.catalog__content_active {
+		justify-content: space-evenly;
+	}
+
 }
 @media (max-width:768px) {
 	.header {
@@ -49,6 +61,18 @@
 			margin: 0 auto;
 		}
 	}
+	.reviews {
+		padding-left: 15px;
+	}
+	.carousel {
+		&__inner {
+			img {
+				width: 85%;
+				display: block;
+				margin: 0 auto;
+			}
+		}
+	}
 }
 @media (max-width:575px) {
 	.header {
@@ -59,6 +83,7 @@
 		}
 	}
 	.promo {
+		background: url(../images/bg1.jpg) 31% (center/cover) no-repeat;
 		&__header {
 			text-align: center;
 			font-size: 25px;
@@ -73,7 +98,7 @@
 	}
 	.button {
 		width: 130px;
-		height: 20px;
+		height: 30px;
 		&_main {
 			width: 200px;
 			height: 50px;
@@ -87,7 +112,7 @@
 	.pros__header {
 			font-size: 25px;
 		}
-	}
+
 	.consultation {
 		min-height: 600px;
 		&__descr {
@@ -98,7 +123,75 @@
 			font-size: 18px;
 		}
 	}
-		
+}
+	.catalog__tab  {
+			width: 85px;
+			height: 30px;
+			line-height: 33px;
+			font-size: 9px;
+		}
+	.review {
+		&-item {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		}
+		&_text {
+			text-align: center;
+		}
 	}
+	.modal {
+		width: 274px;
+		&__subtitle {
+			font-size: 12px;
+		}
+		&__descr {
+			font-size: 10px;
+		}
+		.feed-form {
+			input {
+				width: 65%;
+			}
+			button {
+				width: 65%;
+				font-size: 12px;
+			}
+		}
+		&__close {
+			right: -3px;
+			top: 1px;
+		}
+	}
+	.footer {
+        &__info {
+            width: 80%;
+            height: 200px;
+        }
+        &__address {
+            margin-top: 32px;
+            font-size: 16px;
+        }
+        &__phone {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        &__social {
+            margin-top: 22px;
+        }
+        &__icon {
+            width: 45px;
+            height: 45px;
+            margin-right: 24px;
+            padding-top: 1px;
+            &:nth-child(2) {
+                padding-left: 1px;
+            }
+            i {
+                font-size: 22px;
+            }
+        }
+    }
+
+}
 
 

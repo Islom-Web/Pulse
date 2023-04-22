@@ -1,11 +1,17 @@
 .carousel {
+	width: 100%;
 	padding: 81px 0;
 	&__inner {
 		position: relative;
-		width: 750px;
 		margin: 0 auto;
-		
+		img {
+			width: 100%;
+		}
 	}
+	.slick-dots li.blue-dot button {
+		background-color: blue;
+		/* Другие стили для точки здесь */
+	  }
 	.slick-prev, .slick-next {
 		position: absolute;
 		top: 50%;
@@ -21,6 +27,26 @@
 	.slick-next {
 		left: auto;
 		right: -66px;
+	}
+	.slick-dots {
+		margin-top: 10px;
+		display: flex;
+		justify-content: center;
+		gap: 1.5rem;
+		li {
+			list-style-type: none;
+		}
+		button {
+			width: 1px;
+			height: 8px;
+			border-radius: 50px;
+			background-color: rgb(41, 36, 36);
+			text-indent: -9999px;
+			margin: 0 auto;
+		}
+	}
+	.slick-active button {
+		background-color: red;
 	}
 }
 

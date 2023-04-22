@@ -1,0 +1,35 @@
+@keyframes heartbeat {
+	from {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.4);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+@keyframes shoe {
+	from {
+		transform: translateY(0)
+	}
+	50% {
+		transform: translateY(30px) rotate(-35deg);
+	}
+	to {
+		transform: translateY(0) rotate(0deg);
+	}
+}
+
+@keyframes cup {
+	0% {
+		transform: rotate(0deg);
+	  }
+	  50% {
+		transform: rotate(180deg);
+	  }
+	  100% {
+		transform: rotate(360deg);
+	  }
+}
